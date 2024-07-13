@@ -1,3 +1,6 @@
+#그외
+constants.ts
+
 # compiled output
 /dist
 /node_modules
