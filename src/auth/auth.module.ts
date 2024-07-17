@@ -13,7 +13,9 @@ import { MembersModule } from 'src/members/members.module';
     PassportModule,
     JwtModule.register({
       secret: jwtConstants.secret,
-      signOptions: { expiresIn: '60s' },
+      signOptions: {
+        expiresIn: '1h', //한시간 만료
+      },
     }),
   ],
   providers: [AuthService, JwtStrategy],
