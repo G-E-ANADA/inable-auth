@@ -8,8 +8,8 @@ export class AuthController {
 
   @Post('auth/login')
   async login(@Request() req) {
-    const { username, password } = req.body;
-    return this.authService.login(username, password);
+    const { uid, password } = req.body;
+    return this.authService.login(uid, password);
   }
 
   @UseGuards(JwtAuthGuard)
