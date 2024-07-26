@@ -30,6 +30,9 @@ export class AuthService {
       id: userValidated.id,
       uid: userValidated.uid,
       name: userValidated.name,
+      createdAt: userValidated.createdAt,
+      updatedAt: userValidated.updatedAt,
+      lastLogin: userValidated.lastLogin,
     };
 
     return {
