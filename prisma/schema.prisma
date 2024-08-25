@@ -13,6 +13,11 @@ enum Gender {
   FEMALE
 }
 
+enum Type {
+  PERSONAL
+  CORP
+}
+
 model members {
   id          Int       @id @default(autoincrement())
   uid         String    @unique(map: "uid") @db.VarChar(50)
@@ -27,4 +32,5 @@ model members {
   birth_month Int       @db.Int
   birth_date  Int       @db.Int  
   gender      Gender    // Gender 필드 추가
+  type        Type
 }
