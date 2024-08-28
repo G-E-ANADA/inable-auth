@@ -1,5 +1,11 @@
 # Inable BE
 
+# 기술스택
+- NestJS
+- Prisma
+- Mysql
+- JWT
+
 ## 1.시스템 구조도
 ...
 
