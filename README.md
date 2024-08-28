@@ -39,6 +39,10 @@ $ npm install --save-dev @types/passport-jwt
 $ nest g module auth
 $ nest g service auth
 ```
+- 3파트로 구분(Header, Payload, Signature)
+- 클라이언트가 API호출 시 JWT토큰을 포함한다면, 사용자 인증 + 로직처리에 필요한데이터를 즉시 활용(payload에 있다면) 및 반환 할 수 있다.
+![image](https://github.com/user-attachments/assets/271737f3-323d-41e2-8a79-c881412e8409)
+
 
 ### 5.2.Prisma
 - ORM 툴로 프리즈마 사용
